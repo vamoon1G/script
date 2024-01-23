@@ -245,14 +245,16 @@ function verifyPassword() {
     if (correctPasswords.includes(combinedInput)) {
         passwordContainer.style.display = 'none';
             passwordModal.style.display = 'none';
-          document.addEventListener('DOMContentLoaded',   mainContent.style.display = 'block');
+          document.addEventListener('DOMContentLoaded',   mainContent.style.display = 'block',
+          passwordContainer.style.display = 'none',
+          passwordModal.style.display = 'none');
     } else {
         errorMessage.textContent = "Неверный пароль. Попробуйте еще раз."; // Отображение сообщения об ошибке
     }
 }
 
 
-
+``
 
 
 // Проверяем, было ли уже выполнено первое нажатие и восстанавливаем последнее число
