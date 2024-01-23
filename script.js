@@ -243,8 +243,6 @@ function verifyPassword() {
 
 
     if (correctPasswords.includes(combinedInput)) {
-        passwordContainer.style.display = 'none';
-            passwordModal.style.display = 'none';
           document.addEventListener('DOMContentLoaded',   mainContent.style.display = 'block',
           passwordContainer.style.display = 'none',
           passwordModal.style.display = 'none');
